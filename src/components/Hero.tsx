@@ -13,7 +13,7 @@ const fadeIn = {
   visible: { opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } }
 };
 
-const images = ['/imgs/tm-img-01.jpg', '/imgs/tm-img-02.jpg', '/imgs/tm-img-03.jpg'];
+const images = ['/logo.png','/imgs/tm-img-01.jpg', '/imgs/tm-img-02.jpg', '/imgs/tm-img-03.jpg'];
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -28,16 +28,20 @@ const Hero = () => {
   return (
     <>
       <div className="relative min-h-screen flex justify-center items-center overflow-hidden">
-        <AnimatePresence>
-          <motion.div
-            key={currentImage}
-            className="absolute inset-0 w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${images[currentImage]})` }}
-            initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 1.1, opacity: 0 }}
-            transition={{ duration: 1.5, ease: 'easeInOut' }}
-          />
+      <AnimatePresence>
+  <motion.div
+    key={currentImage}
+    className="absolute inset-0 w-full h-full bg-cover bg-center"
+    style={{
+      backgroundImage: `url(${images[currentImage]})`,
+      backgroundSize: 'cover', // Ensure the image covers the entire container without stretching
+      backgroundPosition: 'center', // Center the image
+    }}
+    initial={{ scale: 1.1, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    exit={{ scale: 1.1, opacity: 0 }}
+    transition={{ duration: 1.5, ease: 'easeInOut' }}
+  />
         </AnimatePresence>
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>

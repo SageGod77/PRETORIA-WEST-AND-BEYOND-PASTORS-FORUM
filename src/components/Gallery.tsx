@@ -2,7 +2,6 @@ import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
-// Array of image paths (from the public folder)
 const images = [
   '/imgs/img1.jpg',
   '/imgs/img2.jpg',
@@ -13,6 +12,16 @@ const images = [
   '/imgs/img7.jpg',
   '/imgs/img8.jpg',
   '/imgs/img9.jpg',
+  '/imgs/tm-img-01.jpg',
+  '/imgs/tm-img-02.jpg',
+  '/imgs/tm-img-03.jpg',
+  '/imgs/tm-img-04.jpg',
+  '/imgs/tm-img-05.jpg',
+  '/imgs/tm-img-06.jpg',
+  '/imgs/tm-img-07.jpg',
+  '/imgs/tm-img-08.jpg',
+  '/imgs/tm-img-09.jpg',
+
   
 ];
 

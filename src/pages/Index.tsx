@@ -15,8 +15,7 @@ const Index = () => {
       <Hero />
       <About />
       <GalleryComponent />
-      <Contact />
-      <Footer />
+      <Contact/>
     </div>
   );
 };
