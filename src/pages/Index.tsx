@@ -11,12 +11,12 @@ import GalleryComponent from "@/components/GalleryComponent";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Hero />
-      <About />
-      <GalleryComponent />
-      <Contact/>
-    </div>
+   <>
+   <Hero/>
+   <About/>
+   <GalleryComponent/>
+   <Contact/>
+</>
   );
 };
 

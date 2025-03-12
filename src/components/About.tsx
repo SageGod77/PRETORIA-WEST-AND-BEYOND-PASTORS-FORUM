@@ -11,7 +11,7 @@ const AboutWithConstitution = () => {
 
   return (
     <section id="about" className="py-16 md:py-24 bg-gray-50">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-6 md:px-12 overflow-hidden">
         {/* About Section */}
         <motion.div className="text-center mb-16"
           initial={{ opacity: 0, y: -50 }}
@@ -43,7 +43,7 @@ const AboutWithConstitution = () => {
             <div className="rounded-lg overflow-hidden shadow-xl">
               <video
                 src="/video/vid-1.mp4"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto max-w-full object-cover"
                 controls
                 autoPlay
                 loop
@@ -90,7 +90,7 @@ const AboutWithConstitution = () => {
             <div className="rounded-lg overflow-hidden shadow-xl">
               <video
                 src="/video/vid-2.mp4"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto max-w-full object-cover"
                 controls
                 autoPlay
                 loop
