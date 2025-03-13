@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/" },
+      { "source": "/gallerypage", "destination": "/gallerypage" },
+      { "source": "/contact", "destination": "/contact" },
+      { "source": "/about", "destination": "/about" },
+      { "source": "/(.*)", "destination": "/404" }
+    ]
+  }
