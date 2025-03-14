@@ -6,30 +6,20 @@
     },
     {
       "source": "/gallerypage",
-      "destination": "/gallerypage"
+      "destination": "/"
     },
     {
       "source": "/contact",
-      "destination": "/contact"
+      "destination": "/"
     },
     {
       "source": "/about",
-      "destination": "/about"
+      "destination": "/"
     },
     {
       "source": "/(.*)",
       "destination": "/404"
     }
-  ],
-  "headers": [
-    {
-      "source": "/static/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
   ]
+
 }
