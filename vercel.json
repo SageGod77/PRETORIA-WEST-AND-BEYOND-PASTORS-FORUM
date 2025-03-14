@@ -1,25 +1,10 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/"
-    },
-    {
-      "source": "/gallerypage",
-      "destination": "/"
-    },
-    {
-      "source": "/contact",
-      "destination": "/"
-    },
-    {
-      "source": "/about",
-      "destination": "/"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/404"
-    }
+  "version": 2,
+  "builds": [
+    { "src": "pages/**/*.tsx", "use": "@vercel/node" },
+    { "src": "components/**/*.tsx", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
   ]
-
 }
