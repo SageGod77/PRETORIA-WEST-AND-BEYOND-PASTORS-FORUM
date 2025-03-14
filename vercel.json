@@ -1,17 +1,36 @@
 {
-    "rewrites": [
-      { "source": "/", "destination": "/" },
-      { "source": "/gallerypage", "destination": "/" },
-      { "source": "/contact", "destination": "" },
-      { "source": "/about", "destination": "/" },
-      { "source": "/(.*)", "destination": "/" }
-    ],
-    "routes": [
-      {
-        "src": "^/static/(.*)$",
-        "headers": { "cache-control": "public, max-age=31536000, immutable" },
-        "dest": "/static/$1"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/"
+    },
+    {
+      "source": "/gallerypage",
+      "destination": "/gallerypage"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact"
+    },
+    {
+      "source": "/about",
+      "destination": "/about"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/404"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
