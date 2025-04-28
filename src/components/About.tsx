@@ -73,15 +73,7 @@ const AboutWithConstitution = () => {
             <p><strong>3. Preamble:</strong> The Pretoria West Pastors Forum unites pastors in the City of Tshwane, glorifying God through unity, ministry, and service.</p>
             <p><strong>4. Physical and Postal Addresses:</strong> Postal Address: P.O. Box 19286, Pretoria West, 0117. Physical Address: c/o VEK Jubal Congregation, Kwaggasrand, Pretoria, 0183.</p>
           </motion.div>
-
-          <motion.a href="/doc/Pretoria West Pastors Forum Constitution 2022.pdf" download
-            initial={{ opacity: 0 }}
-            animate={inView2 ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8 }}>
-            <Button className="mt-10 h-12 w-52 bg-blue-700">Download Full Constitution</Button>
-          </motion.a>
-        </div>
-
+          
         <div className="grid md:grid-cols-2 gap-12 items-center mt-20" ref={ref3}>
           <motion.div className="relative"
             initial={{ x: -100, opacity: 0 }}
