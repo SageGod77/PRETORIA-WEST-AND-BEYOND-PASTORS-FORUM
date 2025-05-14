@@ -20,9 +20,7 @@ const images = [
   '/imgs/tm-img-06.jpg',
   '/imgs/tm-img-07.jpg',
   '/imgs/tm-img-08.jpg',
-  '/imgs/tm-img-09.jpg',
-  '/imgs/tm-img-10.jpg',
-  '/imgs/tm-img-11.jpg',
+  '/imgs/tm-img-09.jpg'
 
   
 ];
