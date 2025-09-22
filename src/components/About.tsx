@@ -100,6 +100,32 @@ const AboutWithConstitution = () => {
             </p>
           </motion.div>
         </div>
+
+                <div className="grid md:grid-cols-2 gap-12 items-center mt-20" ref={ref3}>
+          <motion.div className="relative"
+            initial={{ x: -100, opacity: 0 }}
+            animate={inView3 ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
+            transition={{ duration: 0.8 }}>
+            <div className="rounded-lg overflow-hidden shadow-xl">
+              <video
+                src="/video/vid-2.mp4"
+                className="w-full h-auto max-w-full object-cover"
+                controls
+                autoPlay
+                loop
+                muted
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={inView3 ? { x: 0, opacity: 1 } : { x: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              PREAMBLE: Ten years ago, this forum began as a small vision — a place where faith, love, and community could grow together. Today, we celebrate a decade of God’s grace, countless lives touched, and a family that has only grown stronger. Join us as we look back on the journey, the milestones, and the testimonies that have brought us here… and look forward to the new chapter God is writing for us.
+            </p>
+          </motion.div>
       </div>
     </section>
   );
