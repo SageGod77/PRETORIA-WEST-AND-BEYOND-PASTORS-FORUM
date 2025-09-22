@@ -108,7 +108,7 @@ const AboutWithConstitution = () => {
             transition={{ duration: 0.8 }}>
             <div className="rounded-lg overflow-hidden shadow-xl">
               <video
-                src="/video/vid-2.mp4"
+                src="/video/vid-3..mp4"
                 className="w-full h-auto max-w-full object-cover"
                 controls
                 autoPlay
