@@ -1,5 +1,3 @@
-import { Cross, Users, Heart } from "lucide-react";
-import { Button } from "./ui/button";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -8,6 +6,7 @@ const AboutWithConstitution = () => {
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.2 });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.2 });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: false, threshold: 0.2 });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: false, threshold: 0.2 }); // new for vid-3
 
   return (
     <section id="about" className="py-16 md:py-24 bg-gray-50">
@@ -74,6 +73,8 @@ const AboutWithConstitution = () => {
             <p><strong>4. Physical and Postal Addresses:</strong> Postal Address: P.O. Box 19286, Pretoria West, 0117. Physical Address: c/o VEK Jubal Congregation, Kwaggasrand, Pretoria, 0183.</p>
           </motion.div>
           </div>
+
+        {/* Video 2 Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mt-20" ref={ref3}>
           <motion.div className="relative"
             initial={{ x: -100, opacity: 0 }}
@@ -100,9 +101,41 @@ const AboutWithConstitution = () => {
             </p>
           </motion.div>
         </div>
+
+        {/* Video 3 Section */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mt-20" ref={ref4}>
+          <motion.div className="relative"
+            initial={{ x: -100, opacity: 0 }}
+            animate={inView4 ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
+            transition={{ duration: 0.8 }}>
+            <div className="rounded-lg overflow-hidden shadow-xl">
+              <video
+                src="/video/vid-3..mp4"   // your double-dot filename
+                className="w-full h-auto max-w-full object-cover"
+                controls
+                autoPlay
+                loop
+                muted
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={inView4 ? { x: 0, opacity: 1 } : { x: 100, opacity: 0 }}
+            transition={{ duration: 0.8 }}>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              PREAMBLE: Ten years ago, this forum began as a small vision — a place where faith, love, and community could grow together. 
+              Today, we celebrate a decade of God’s grace, countless lives touched, and a family that has only grown stronger. 
+              Join us as we look back on the journey, the milestones, and the testimonies that have brought us here… 
+              and look forward to the new chapter God is writing for us.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default AboutWithConstitution;
+
