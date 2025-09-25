@@ -58,13 +58,13 @@ const images = [
   '/imgs/tm-img-44.jpg',
   '/imgs/tm-img-45.jpg',
   '/imgs/tm-img-46.jpg',
-  '/imgs/tm-img-47.jpg',
-  '/imgs/tm-img-48.jpg',
-  '/imgs/tm-img-49.jpg',
-  '/imgs/tm-img-50.jpg',
-  '/imgs/tm-img-51.jpg',
-  '/imgs/tm-img-52.jpg',
-  '/imgs/tm-img-53.jpg'
+  '/imgs/tm-img-47.jpeg',
+  '/imgs/tm-img-48.jpeg',
+  '/imgs/tm-img-49.jpeg',
+  '/imgs/tm-img-50.jpeg',
+  '/imgs/tm-img-51.jpeg',
+  '/imgs/tm-img-52.jpeg',
+  '/imgs/tm-img-53.jpeg'
 ];
 
 export default function MyComponent() {
